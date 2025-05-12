@@ -24,5 +24,6 @@ function toRoman(num) {
 }
 
 // Example usage:
-const input = prompt("Enter a string");   // Output: XIV
-console.log(toRoman(input));   // Output: DCCXCVIII
+const input = prompt("Enter a number");   // Output: XIV
+const num = parseInt(input)
+console.log(toRoman(num));   // Output: DCCXCVIII
