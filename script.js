@@ -1,4 +1,3 @@
-/* Your CSS Code here. */
 function toRoman(num) {
   if (num <= 0 || num > 100000) {
     return "Invalid input";
@@ -23,7 +22,6 @@ function toRoman(num) {
   return result;
 }
 
-// Example usage:
-const input = prompt("Enter a number");   // Output: XIV
+const input = prompt("Enter a number");  
 const num = parseInt(input)
-console.log(toRoman(num));   // Output: DCCXCVIII
+console.log(toRoman(num));
