@@ -1,16 +1,73 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Numeral Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-   </script>
+    <div class="container">
+        <h1>
+            <i class="fas fa-history"></i>
+            Roman Numeral Converter
+        </h1>
+        <p class="subtitle">Convert numbers between 0 and 100,000 to Roman numerals</p>
+        
+        <div class="converter">
+            <div class="input-group">
+                <label for="numberInput">Enter a number:</label>
+                <input type="number" id="numberInput" min="0" max="100000" placeholder="0 - 100000" value="14">
+            </div>
+            
+            <button id="convertBtn">
+                <i class="fas fa-exchange-alt"></i> Convert to Roman
+            </button>
+            
+            <div class="output" id="output">
+                XIV
+            </div>
+        </div>
+        
+        <div class="symbols">
+            <div class="symbol-card"><div class="symbol-value">M</div><div class="symbol-name">1000</div></div>
+            <div class="symbol-card"><div class="symbol-value">D</div><div class="symbol-name">500</div></div>
+            <div class="symbol-card"><div class="symbol-value">C</div><div class="symbol-name">100</div></div>
+            <div class="symbol-card"><div class="symbol-value">L</div><div class="symbol-name">50</div></div>
+            <div class="symbol-card"><div class="symbol-value">X</div><div class="symbol-name">10</div></div>
+            <div class="symbol-card"><div class="symbol-value">V</div><div class="symbol-name">5</div></div>
+            <div class="symbol-card"><div class="symbol-value">I</div><div class="symbol-name">1</div></div>
+        </div>
+        
+        <div class="examples">
+            <div class="example">
+                <h3><i class="fas fa-lightbulb"></i> Example 1</h3>
+                <p>Input: <span class="number">14</span></p>
+                <p>Output: <span class="roman">XIV</span></p>
+            </div>
+            <div class="example">
+                <h3><i class="fas fa-lightbulb"></i> Example 2</h3>
+                <p>Input: <span class="number">798</span></p>
+                <p>Output: <span class="roman">DCCXCVIII</span></p>
+            </div>
+            <div class="example">
+                <h3><i class="fas fa-lightbulb"></i> Example 3</h3>
+                <p>Input: <span class="number">3999</span></p>
+                <p>Output: <span class="roman">MMMCMXCIX</span></p>
+            </div>
+            <div class="example">
+                <h3><i class="fas fa-lightbulb"></i> Example 4</h3>
+                <p>Input: <span class="number">100000</span></p>
+                <p>Output: <span class="roman">(C)</span></p>
+            </div>
+        </div>
+        
+        <div class="info">
+            <p><i class="fas fa-info-circle"></i> Note: For numbers above 3,999, parentheses are used to indicate multiplication by 1,000.</p>
+        </div>
+    </div>
 
+    <script src="script.js"></script>
 </body>
-
 </html>
